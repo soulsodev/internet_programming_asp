@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div {
+            padding: 15px 0px;
+            max-width: 200px;
+        }
+
+        button {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col" style="align-items:center">
+            <h3>lab01 - HTTP Handler</h3>
+
+            <form>
+                <div class="form-group">
+                    <label for="GET" style="font-weight:bold">GET Request: </label>
+                    <input readonly type="text" class="form-control" id="getRequest" placeholder="Result">
+                    <button type="button" class="btn btn-primary btn-get" style="background-color: lawngreen">GET</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="POST" style="font-weight:bold">POST Request: </label>
+                    <input type="number" class="form-control" id="postRequest" placeholder="New Result Value">
+                    <button type="button" class="btn btn-primary btn-post" style="background-color: lawngreen">POST</button>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="PUT" style="font-weight:bold">PUT Request: </label>
+                    <input type="number" class="form-control" id="putRequest" placeholder="Push Stack">
+                    <button type="button" class="btn btn-primary btn-put" style="background-color: lawngreen">PUT</button>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-delete" style="background-color:red; color: white">DELETE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-get").click(function () { 
+            fetch('http://172.16.193.234:17217/lab01/.TVI', { method: 'GET' })
+              .then(response => response.json())
+                .then(data => $("#getRequest").val(JSON.stringify(data)));
+        });
+
+        $(".btn-post").click(function() {
+            fetch('http://172.16.193.234:17217/lab01/.TVI?RESULT=' + $("#postRequest").val(), { method: 'POST' })
+        });
+
+        $(".btn-put").click(function () {
+            fetch('http://172.16.193.234:17217/lab01/.TVI?ADD=' + $("#putRequest").val(), { method: 'PUT' })
+        });
+
+        $(".btn-delete").click(function () {
+            fetch('http://172.16.193.234:17217/lab01/.TVI', { method: 'DELETE' })
+        });
+
+    </script>
+
+</body>
+
+</html>

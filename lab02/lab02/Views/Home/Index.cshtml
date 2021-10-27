@@ -1,0 +1,96 @@
+﻿
+<br/>
+
+<div class="form-group">
+    <input class="form-control" placeholder="Input data" type="text" id="inputValue" />
+</div>
+
+<div>
+    <b>Result:</b> <label id="resultValue"/>
+</div><br/>
+
+<div class="form-group">
+    <input class="form-control" type="button" id="getRequest" value="GET" style="background-color: deepskyblue; color: white" />
+</div>
+
+<div class="form-group">
+    <input class="form-control" type="button" id="postRequest" value="POST" style="background-color:deepskyblue; color: white" />
+</div> 
+
+<div class="form-group">
+    <input class="form-control" type="button" id="putRequest" value="PUT" style="background-color:deepskyblue; color: white" />
+</div>
+
+<div class="form-group">
+    <input class="form-control" type="button" id="deleteRequest" value="DELETE" style="background-color:orangered; color: white" />
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    const serv = "http://172.16.193.234:17217/lab02/" + "api/values/";
+
+    function load() {
+        $.ajax({
+            url: serv,
+            type: "GET",
+            success: function (data) {
+                $("#resultValue").html(data)
+            }
+        });
+    }
+
+    $("document").ready(() => {
+        $("#getRequest").click(function () {
+            $.ajax({
+                url: serv,
+                type: "GET",
+                success: function (data) {
+                    $("#resultValue").html(data)
+                }
+            })
+        });
+
+        $("#postRequest").click(() => {
+            var value = $("#inputValue").val()
+            $.ajax({
+                url: serv,
+                type: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify({ resultValue: parseInt(value) }),
+                success: function (data) {
+                    $("#resultValue").text(data)
+                }
+            })
+        })
+
+        $("#putRequest").click(() => {
+            var value = $("#inputValue").val()
+            $.ajax({
+                url: serv,
+                type: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify({ addValue: parseInt(value) }),
+                success: function (data) {
+                    $("#resultValue").text(data)
+                }
+            })
+        });
+
+        $("#deleteRequest").click(() => {
+            var value = $("#inputValue").val()
+            $.ajax({
+                url: serv,
+                type: "DELETE",
+                success: function (data) {
+                    $("#resultValue").html(data)
+                }
+            })
+        });
+    });
+    
+ </script>
