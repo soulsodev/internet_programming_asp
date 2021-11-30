@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\LB3",
+    "\\LB3\\Areas",
+    "\\LB3\\Controllers",
+    "\\LB3\\Models",
+    "\\LB3\\Properties",
+    "\\LB3\\Scripts",
+    "\\LB3\\Views",
+    "\\LB3\\Views\\Home",
+    "\\LB3\\Views\\Shared"
+  ],
+  "SelectedNode": "\\LB3\\Views\\Home\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

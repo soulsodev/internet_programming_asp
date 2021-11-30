@@ -78,7 +78,6 @@ D:\7sem\Programming-on-the-Internet\lab02\lab02\bin\System.Web.WebPages.Deployme
 D:\7sem\Programming-on-the-Internet\lab02\lab02\bin\System.Web.WebPages.Razor.xml
 D:\7sem\Programming-on-the-Internet\lab02\lab02\bin\Antlr3.Runtime.pdb
 D:\7sem\Programming-on-the-Internet\lab02\lab02\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\7sem\Programming-on-the-Internet\lab02\lab02\obj\Debug\lab02.csprojAssemblyReference.cache
 D:\7sem\Programming-on-the-Internet\lab02\lab02\obj\Debug\lab02.csproj.CoreCompileInputs.cache
 D:\7sem\Programming-on-the-Internet\lab02\lab02\obj\Debug\lab02.csproj.CopyComplete
 D:\7sem\Programming-on-the-Internet\lab02\lab02\obj\Debug\lab02.dll
