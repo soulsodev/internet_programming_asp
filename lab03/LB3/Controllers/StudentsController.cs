@@ -74,8 +74,7 @@ namespace lab03.Controllers
                 sqlQuery = "SELECT * FROM Students " +
                     "WHERE id > @P0 AND " +
                     "id < @P1 " +
-                    "AND (id LIKE '%' + @P2 + '%' OR name LIKE '%' + @P2 + '%' " +
-                    "OR phone LIKE '%' + @P2 + '%') " +
+                    "AND (SELECT CONCAT(Students.id, Students.name, Students.phone)) LIKE  '%' + @P2 + '%' " +
                     "ORDER BY " + orderBy + " " +
                     "OFFSET @P3 ROWS FETCH NEXT @P4 ROWS ONLY";
 
