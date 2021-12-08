@@ -20,6 +20,7 @@ namespace lab03.Controllers
         [HttpGet]
         [ResponseType(typeof(Student))]
         [Route("api/{path:regex((students)[.](json)|(students)[.](xml))}")]
+        [Route("api/Students/{id}")]
         public IHttpActionResult GetStudents(
             string path = "students.json",
 
@@ -113,6 +114,7 @@ namespace lab03.Controllers
         [HttpGet]
         [ResponseType(typeof(Student))]
         [Route("api/{path:regex((students)[.](json)|(students)[.](xml))}/{id}")]
+        [Route("api/Students/{id}")]
         public IHttpActionResult Get(int? id, string path = "students.json")
         {
             try
