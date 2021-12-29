@@ -1,0 +1,10 @@
+D:\7sem\services\lab4\Simplex\WinForm\bin\Debug\WinForm.exe.config
+D:\7sem\services\lab4\Simplex\WinForm\bin\Debug\WinForm.exe
+D:\7sem\services\lab4\Simplex\WinForm\bin\Debug\WinForm.pdb
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.Form1.resources
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.exe
+D:\7sem\services\lab4\Simplex\WinForm\obj\Debug\WinForm.pdb

@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>\\172.16.193.234\Apps\Taraikovich\lab03</_PublishTargetUrl>
-    <History>False|2021-12-07T18:54:28.9257399Z;False|2021-12-07T21:53:07.8519419+03:00;False|2021-12-07T21:49:47.8434952+03:00;True|2021-12-07T21:49:07.0048766+03:00;False|2021-12-07T21:47:19.3033387+03:00;True|2021-12-01T01:10:06.6380109+03:00;False|2021-12-01T01:06:25.4259410+03:00;False|2021-12-01T01:05:59.5834444+03:00;False|2021-12-01T01:04:23.8864997+03:00;False|2021-12-01T01:02:58.4887292+03:00;False|2021-12-01T01:01:52.4978757+03:00;False|2021-12-01T01:00:21.0347670+03:00;False|2021-12-01T00:59:20.4157092+03:00;True|2021-10-25T10:11:11.0111527+03:00;True|2021-10-25T09:41:54.7546836+03:00;True|2021-10-25T09:38:48.3403252+03:00;True|2021-10-25T08:46:32.8140715+03:00;True|2021-10-22T08:45:26.2684647+03:00;True|2021-10-22T08:42:29.7480354+03:00;True|2021-10-22T08:24:17.9033394+03:00;True|2021-10-21T20:54:04.8735619+03:00;True|2021-10-21T20:49:27.8846517+03:00;True|2021-10-20T20:50:37.2368347+03:00;True|2021-10-20T20:43:40.7031950+03:00;True|2021-10-20T20:30:17.6437845+03:00;True|2021-10-20T19:28:02.0737243+03:00;True|2021-10-20T19:24:19.9347351+03:00;True|2021-10-20T19:20:40.4667180+03:00;True|2021-10-20T19:18:45.3628214+03:00;True|2021-10-20T19:17:23.1060367+03:00;</History>
+    <_PublishTargetUrl>C:\Users\vladi\Desktop\lab03</_PublishTargetUrl>
+    <History>True|2021-12-08T05:46:04.1492877Z;False|2021-12-08T08:45:37.9529247+03:00;False|2021-12-07T21:54:28.9257399+03:00;False|2021-12-07T21:53:07.8519419+03:00;False|2021-12-07T21:49:47.8434952+03:00;True|2021-12-07T21:49:07.0048766+03:00;False|2021-12-07T21:47:19.3033387+03:00;True|2021-12-01T01:10:06.6380109+03:00;False|2021-12-01T01:06:25.4259410+03:00;False|2021-12-01T01:05:59.5834444+03:00;False|2021-12-01T01:04:23.8864997+03:00;False|2021-12-01T01:02:58.4887292+03:00;False|2021-12-01T01:01:52.4978757+03:00;False|2021-12-01T01:00:21.0347670+03:00;False|2021-12-01T00:59:20.4157092+03:00;True|2021-10-25T10:11:11.0111527+03:00;True|2021-10-25T09:41:54.7546836+03:00;True|2021-10-25T09:38:48.3403252+03:00;True|2021-10-25T08:46:32.8140715+03:00;True|2021-10-22T08:45:26.2684647+03:00;True|2021-10-22T08:42:29.7480354+03:00;True|2021-10-22T08:24:17.9033394+03:00;True|2021-10-21T20:54:04.8735619+03:00;True|2021-10-21T20:49:27.8846517+03:00;True|2021-10-20T20:50:37.2368347+03:00;True|2021-10-20T20:43:40.7031950+03:00;True|2021-10-20T20:30:17.6437845+03:00;True|2021-10-20T19:28:02.0737243+03:00;True|2021-10-20T19:24:19.9347351+03:00;True|2021-10-20T19:20:40.4667180+03:00;True|2021-10-20T19:18:45.3628214+03:00;True|2021-10-20T19:17:23.1060367+03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Data/Database1.mdf">
@@ -15,10 +15,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/20/2021 20:16:08</publishTime>
     </File>
     <File Include="App_Data/lab03.mdf">
-      <publishTime>12/07/2021 21:42:10</publishTime>
+      <publishTime>12/08/2021 08:43:30</publishTime>
     </File>
     <File Include="App_Data/lab03_log.ldf">
-      <publishTime>12/07/2021 21:42:10</publishTime>
+      <publishTime>12/08/2021 08:43:30</publishTime>
     </File>
     <File Include="Areas/HelpPage/HelpPage.css">
       <publishTime>12/07/2021 21:29:07</publishTime>
@@ -96,10 +96,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/07/2021 21:29:09</publishTime>
     </File>
     <File Include="bin/LB3.dll">
-      <publishTime>12/07/2021 21:49:06</publishTime>
+      <publishTime>12/08/2021 08:46:03</publishTime>
     </File>
     <File Include="bin/LB3.pdb">
-      <publishTime>12/07/2021 21:49:06</publishTime>
+      <publishTime>12/08/2021 08:46:03</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>12/07/2021 21:29:10</publishTime>

@@ -1,0 +1,41 @@
+﻿<form id="form1" runat="server">
+    <div>
+        <div>
+            <p>Id:<input type="number" id="id" value="1" /></p>
+            <p>Method:<input type="text" id="method" value="GetM" /></p>
+            <p>Key<input type="number" id="key" value="1" /></p>
+            <p>Value:<input type="text" id="val" value="1" /></p>
+            <p><input type="button" onclick="Ajax()" value="ajax" /></p>
+        </div>
+        <div>
+            <p>Result <input type="text" id="result" /></p>
+            <p>Error <input type="text" id="error" /></p>
+        </div>
+    </div>
+</form>
+<script>
+    function Ajax() {
+        let data = {
+            Id: parseInt($("#id").val()),
+            Jsonrpc: "2.0",
+            Method: $("#method").val(),
+            Params: {
+                Key: parseInt($("#key").val()),
+                Value: parseInt($("#val").val())
+            }
+        };
+        $.ajax({
+            url: "/JRService/Single",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+            success: result => {
+                $("#result").val(result.Result);
+                $("#error").val(result.Error.Message);
+                console.log(result);
+            },
+            error: error => {
+                console.log(error);
+            }
+        })
+    }</script>
